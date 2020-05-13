@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using Leap.Unity;
 
-public class indexL : MonoBehaviour
+public class indexR : MonoBehaviour
 {
 
     public float testf;
+
     public static bool index=false;
     // Start is called before the first frame update
     void Start()
@@ -17,14 +18,16 @@ public class indexL : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        testf = GetComponent<RigidFinger>().GetFingerJointStretchMecanim(1);
-        if(testf>-10)
+        testf = GetComponent<RigidFinger>().GetFingerJointStretchMecanim(2);
+
+        if(testf>-15)
         {
             index=true;
-            Debug.Log("1");
+            //Debug.Log("1");
         }
         else
             index=false;
     
-    }
+        
+    }   
 }

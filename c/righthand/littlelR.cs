@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Leap.Unity;
 
-public class littlelL : MonoBehaviour
+public class littlelR : MonoBehaviour
 {
 
     public float testf;
@@ -17,11 +17,11 @@ public class littlelL : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        testf = GetComponent<RigidFinger>().GetFingerJointStretchMecanim(1);
-        if(testf>-10)
+        testf = GetComponent<RigidFinger>().GetFingerJointStretchMecanim(2);
+        if(testf>-15)
         {
             little=true;
-            Debug.Log("4");
+           // Debug.Log("4");
         }
         else
             little=false;
